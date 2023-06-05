@@ -19,145 +19,90 @@ li {
 }
 
 /* NAVBAR STYLING STARTS */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav {
   background-color: #feffff;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
   padding-left: 5%;
   padding-right: 5%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 99;
 }
-
-.nav-links a {
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
   color: #4c447e;
-}
-
-/* LOGO */
-.logo img {
-  width: 150px; /* Ukuran yang sesuai untuk logo di website */
-  height: auto; /* Membuat logo responsif */
-  display: block; /* Menghilangkan space di bawah logo */
-  margin: 0 auto; /* Memposisikan logo di tengah secara horizontal */
-  position: relative; /* Membuat logo posisi relatif */
-  top: 50%; /* Memposisikan logo di tengah secara vertikal */
-}
-
-/* NAVBAR MENU */
-.menu {
-  display: flex;
-  gap: 1em;
   font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-weight: bold;
 }
-
-.menu li a:hover {
+nav a.active,
+nav a:hover {
   color: #120d31;
-  transition: 0.3s ease;
+  transition: 0.5s;
 }
-
-.menu li:first-child a {
+.checkbtn {
+  font-size: 30px;
   color: #120d31;
-}
-
-.menu li {
-  padding: 5px 14px;
-}
-
-/* DROPDOWN MENU */
-/* .services {
-  position: relative;
-}
-
-.dropdown {
-  background-color: #feffff;
-  padding: 1em 0;
-  position: absolute; WITH RESPECT TO PARENT
-  display: none;
-  border-radius: 8px;
-  top: 35px;
-}
-
-.dropdown li + li {
-  margin-top: 10px;
-} 
-
-.dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
-}
-
-.dropdown li:hover {
-  background-color: #4c9e9e;
-}
-
-.services:hover .dropdown {
-  display: block;
-}  */
-
-/* RESPONSIVE NAVBAR MENU STARTS */
-
-/* CHECKBOX HACK */
-
-input[type="checkbox"] {
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
   display: none;
 }
-
-/* HAMBURGER MENU */
-.hamburger {
+#check {
   display: none;
-  font-size: 24px;
-  user-select: none;
 }
-
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: #feffff;
-    right: 0;
-    left: 0;
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 5%;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #feffff;
+    top: 80px;
+    left: -100%;
     text-align: center;
-    padding: 16px 0;
-    margin-top: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    z-index: 80;
   }
-
-  .menu li:hover {
-    display: inline-block;
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav a:hover,
+  nav a.active {
+    background: none;
     color: #120d31;
-    transition: 0.3s ease;
   }
-
-  .menu li + li {
-    margin-top: 12px;
-  }
-
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
-
-  .dropdown li:hover {
-    background-color: #4c9e9e;
+  #check:checked ~ ul {
+    left: 0;
   }
 }
-
 /* Navbar END */
 
 /* Hero Section Start */

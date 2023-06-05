@@ -5,44 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-
     <link rel="stylesheet" href="/src/css/style.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <nav class="navbar">
-      <!-- LOGO -->
-      <div class="logo">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
         <img src="/src/img/Logo.png" alt="" />
-      </div>
-
-      <!-- NAVIGATION MENU -->
-      <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-          <li><a href="index.html">Home Page</a></li>
-          <li><a href="/">Events</a></li>
-
-          <li class="services">
-            <a href="/">Price List</a>
-
-            <!-- DROPDOWN MENU
-            <ul class="dropdown">
-              <li><a href="/">Dropdown 1 </a></li>
-              <li><a href="/">Dropdown 2</a></li>
-              <li><a href="/">Dropdown 2</a></li>
-              <li><a href="/">Dropdown 3</a></li>
-              <li><a href="/">Dropdown 4</a></li>
-            </ul> -->
-          </li>
-
-          <li><a href="/">About Us</a></li>
-          <li><a href="/">Contacts</a></li>
-        </div>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home Page</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Price List</a></li>
+        <li><a href="#">Abous Us</a></li>
+        <li><a href="#">Contacts</a></li>
       </ul>
     </nav>
 
