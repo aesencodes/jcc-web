@@ -132,7 +132,7 @@ nav a:hover {
 
 @media (max-width: 480px) {
   .title {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
   .title h1 {
     font-size: 24px;
@@ -228,7 +228,6 @@ button[type="submit"] {
 }
 
 .contact-message {
-  font-style: italic;
   padding-top: 40px;
 }
 
