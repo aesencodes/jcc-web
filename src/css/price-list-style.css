@@ -180,6 +180,11 @@ nav a:hover {
   }
 
   .logo-title img {
+    width: 100px;
+    height: auto;
+  }
+
+  .logo-title img {
     grid-column: 1;
     margin-right: 10px;
     justify-self: start;
@@ -267,9 +272,36 @@ nav a:hover {
   .package-features li {
     font-size: 18px;
   }
+
+  .consultation-content p {
+    font-size: 16px;
+    color: #163e63;
+    font-weight: bold;
+  }
 }
 
 /* Package Section End */
+
+/* Consultation Section Start */
+.consultation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 15vh auto;
+}
+
+.consultation-content {
+  text-align: center;
+}
+
+.consultation-content p {
+  font-size: 45px;
+  color: #163e63;
+  font-weight: bold;
+}
+
+/* Consultation Section End */
 
 /* Footer Start */
 footer {
