@@ -145,6 +145,9 @@ nav a:hover {
     padding: 20px;
     text-align: center;
     margin-top: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 
   .text-column {
@@ -162,7 +165,7 @@ nav a:hover {
 
 @media (max-width: 480px) {
   .hero-section {
-    margin-top: 12vh;
+    margin-top: 15vh;
   }
   .text-column h2 {
     font-size: 25px;
