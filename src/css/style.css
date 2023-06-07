@@ -301,6 +301,10 @@ nav a:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.button-container .see-more a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .see-more:hover {
   background-color: #133a6d;
@@ -316,6 +320,7 @@ nav a:hover {
   transition: transform 0.3s ease;
   margin-left: 5px;
 }
+
 /* Button "See More" End*/
 
 /* Footer Start */
